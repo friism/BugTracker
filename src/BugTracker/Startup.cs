@@ -24,6 +24,9 @@ public class Startup
         */
         app.UseErrorPage(ErrorPageOptions.ShowAll);
 
+	//Configure WebSockets
+	app.UseWebSockets();
+
         //Configure SignalR
         app.UseSignalR();
 
